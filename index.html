@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دار قمم النجاح المتحدة | نقل البضائع والأسمنت السائب</title>
+  <meta name="description" content="دار قمم النجاح المتحدة شركة نقل سعودية مقرها الدمام، تقدّم حلول نقل موثوقة للبضائع السائبة والأسمنت بين مدن المملكة.">
+  <meta name="theme-color" content="#0B3FA0">
+  <link rel="canonical" href="https://qimamalnajah.com/">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:title" content="دار قمم النجاح المتحدة">
+  <meta property="og:description" content="نقل البضائع والأسمنت السائب.">
+  <meta property="og:image" content="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0B3FA0;
+      --blue-dark: #082E76;
+      --blue-deep: #061F52;
+      --blue-soft: #F3F6FC;
+      --blue-mid: #E6ECF7;
+      --line: #D7DEEE;
+      --text: #152238;
+      --muted: #5C6B80;
+      --white: #ffffff;
+      --shadow: 0 8px 24px rgba(11, 63, 160, 0.07);
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Tajawal", "Segoe UI", Tahoma, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.8;
+      font-size: 1.05rem;
+      text-rendering: optimizeLegibility;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--blue); }
+    a:hover { color: var(--blue-dark); }
+    h1, h2, h3 { line-height: 1.35; margin: 0; font-weight: 800; color: var(--blue-deep); }
+    p { margin: 0; }
+
+    .skip {
+      position: absolute;
+      right: -999px;
+      top: 0;
+      background: var(--blue);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      z-index: 100;
+    }
+    .skip:focus { right: 0.75rem; top: 0.75rem; }
+
+    .wrap {
+      width: min(1080px, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.7rem 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      color: var(--blue);
+      min-width: 0;
+    }
+    .brand img {
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+    }
+    .brand-name {
+      font-weight: 800;
+      font-size: 0.92rem;
+      line-height: 1.35;
+      white-space: nowrap;
+    }
+    @media (max-width: 420px) {
+      .brand-name { white-space: normal; font-size: 0.86rem; }
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.15rem 0.15rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+    }
+    nav a:hover,
+    nav a:focus-visible {
+      background: var(--blue-soft);
+      color: var(--blue);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 2.4rem 0 3.2rem;
+      text-align: center;
+      background:
+        radial-gradient(ellipse 90% 70% at 50% -10%, #E4EBF8 0%, #ffffff 68%);
+    }
+    .hero-logo {
+      width: min(128px, 34vw);
+      height: auto;
+      margin: 0 auto 0.7rem;
+    }
+    .hero h1 {
+      font-size: clamp(1.55rem, 5vw, 2.45rem);
+      color: var(--blue);
+      letter-spacing: -0.02em;
+    }
+    .hero .en-name {
+      margin-top: 0.25rem;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 1.02rem;
+      letter-spacing: 0.02em;
+    }
+    .tagline {
+      margin: 1rem auto 0;
+      max-width: 34rem;
+      font-size: clamp(1.15rem, 3.2vw, 1.4rem);
+      font-weight: 700;
+      color: var(--blue-dark);
+    }
+    .lead {
+      margin: 0.85rem auto 0;
+      max-width: 38rem;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.7rem;
+      margin-top: 1.6rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 0.72rem 1.35rem;
+      font-size: 1rem;
+      border: 1.5px solid transparent;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    }
+    .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus-visible {
+      background: var(--blue-dark);
+      color: #fff;
+    }
+    .btn-ghost {
+      background: #fff;
+      color: var(--blue);
+      border-color: var(--blue);
+    }
+    .btn-ghost:hover,
+    .btn-ghost:focus-visible {
+      background: var(--blue-soft);
+      color: var(--blue-dark);
+    }
+
+    /* Sections */
+    section { padding: 2.6rem 0; }
+    .section-head {
+      text-align: center;
+      margin-bottom: 1.6rem;
+    }
+    .section-head h2 {
+      font-size: clamp(1.35rem, 3.5vw, 1.8rem);
+      color: var(--blue);
+    }
+    .section-head p {
+      margin-top: 0.45rem;
+      color: var(--muted);
+      max-width: 36rem;
+      margin-inline: auto;
+    }
+    .kicker {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.35rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 740px) {
+      .grid-3 { grid-template-columns: repeat(3, 1fr); gap: 1.15rem; }
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.45rem 1.3rem 1.4rem;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 3px;
+      background: var(--blue);
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+    .icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.85rem;
+    }
+    .icon svg { width: 22px; height: 22px; }
+    .card h3 {
+      font-size: 1.12rem;
+      color: var(--blue-deep);
+      margin-bottom: 0.4rem;
+    }
+    .card p { color: var(--muted); font-size: 0.98rem; }
+
+    .why { background: var(--blue-soft); }
+    .why .card { box-shadow: none; }
+
+    /* Contact */
+    .contact-box {
+      display: grid;
+      gap: 0.8rem;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 0.95rem 1.1rem;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: var(--shadow);
+    }
+    .contact-item:hover,
+    .contact-item:focus-visible {
+      border-color: #b7c5e6;
+      color: inherit;
+    }
+    .contact-item .icon { margin: 0; flex-shrink: 0; }
+    .contact-item .label {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    .contact-item .value {
+      display: block;
+      font-weight: 700;
+      color: var(--blue-deep);
+      font-size: 1.02rem;
+      line-height: 1.5;
+    }
+    .ltr { direction: ltr; unicode-bidi: isolate; }
+
+    /* English block */
+    .english {
+      background: var(--blue-deep);
+      color: #E8EEF8;
+      padding: 3rem 0;
+    }
+    .english h2,
+    .english h3 { color: #fff; }
+    .english .kicker { color: #9DB4E3; letter-spacing: 0.12em; text-transform: uppercase; }
+    .english .section-head h2 { color: #fff; }
+    .english .section-head p { color: #C5D0E6; }
+    .english .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.14);
+      box-shadow: none;
+    }
+    .english .card::before { background: #7EA0E0; }
+    .english .card p { color: #C5D0E6; }
+    .english .icon { background: rgba(255, 255, 255, 0.1); color: #fff; }
+    .english .contact-item {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.14);
+      box-shadow: none;
+    }
+    .english .contact-item .label { color: #9DB4E3; }
+    .english .contact-item .value { color: #fff; }
+    .english .en-intro {
+      text-align: center;
+      max-width: 40rem;
+      margin: 0 auto 2rem;
+    }
+    .english .en-intro h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); }
+    .english .en-intro .tag {
+      margin-top: 0.45rem;
+      font-weight: 700;
+      color: #D6E2F8;
+      font-size: 1.08rem;
+    }
+    .english .en-intro p {
+      margin-top: 0.75rem;
+      color: #C5D0E6;
+    }
+    .english .block { margin-top: 2rem; }
+
+    /* Footer */
+    .site-footer {
+      background: #041633;
+      color: #B7C3D9;
+      padding: 1.35rem 0;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+    .site-footer strong { color: #fff; font-weight: 700; }
+
+    .footer-line {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.35rem 0.55rem;
+      margin: 0;
+      direction: ltr;
+    }
+
+    @media (max-width: 720px) {
+      .header-inner {
+        flex-wrap: wrap;
+        padding: 0.65rem 0 0.5rem;
+        gap: 0.3rem;
+      }
+      .brand {
+        width: 100%;
+        justify-content: center;
+      }
+      .brand-name {
+        white-space: nowrap;
+        font-size: 0.95rem;
+      }
+      nav { width: 100%; }
+      nav ul {
+        width: 100%;
+        justify-content: center;
+        gap: 0.1rem 0.15rem;
+      }
+      nav a { padding: 0.28rem 0.55rem; font-size: 0.86rem; }
+      section { padding: 2.2rem 0; }
+      .hero { padding: 1.5rem 0 2.1rem; }
+      .hero-logo { width: min(112px, 32vw); }
+      .site-footer { font-size: 0.84rem; }
+      .footer-line span, .footer-line strong { white-space: nowrap; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="mark.png" width="42" height="42" alt="">
+        <span class="brand-name">دار قمم النجاح المتحدة</span>
+      </a>
+      <nav aria-label="القائمة الرئيسية">
+        <ul>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#why">لماذا نحن</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+          <li><a href="#en">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <img class="hero-logo" src="mark.png" width="140" height="140" alt="شعار دار قمم النجاح المتحدة">
+        <h1>دار قمم النجاح المتحدة</h1>
+        <p class="en-name">Dar Qimam Al-Najah United</p>
+        <p class="tagline">نقل البضائع والأسمنت السائب</p>
+        <p class="lead">شركة نقل سعودية مقرها الدمام في المنطقة الشرقية، متخصصة في نقل البضائع والأسمنت السائب بين مدن المملكة.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            تواصل معنا
+          </a>
+          <a class="btn btn-ghost" href="https://wa.me/966507389599" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.15 6.43 2.15 11.89c0 1.76.46 3.48 1.34 5L2 22l5.24-1.37a9.86 9.86 0 0 0 4.8 1.22h.01c5.46 0 9.89-4.43 9.89-9.89 0-2.64-1.03-5.13-2.9-7-1.87-1.86-4.36-2.96-7-2.96zm0 18.07h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.81.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.53 3.69-8.21 8.23-8.21 2.2 0 4.26.86 5.81 2.41a8.16 8.16 0 0 1 2.4 5.8c0 4.53-3.69 8.22-8.21 8.24zm4.51-6.15c-.25-.12-1.46-.72-1.69-.8-.23-.09-.39-.12-.56.12-.16.25-.64.8-.78.96-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.11-.22-.17-.47-.3z"/></svg>
+            واتساب
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">ما نقدّمه</span>
+          <h2>خدماتنا</h2>
+          <p>حلول نقل واضحة ومنظّمة تلبي احتياجات المصانع والشركات في مختلف مناطق المملكة.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V8h11v8"/><path d="M14 10h3.5L20 13v3h-6"/><circle cx="6.5" cy="16.5" r="1.7"/><circle cx="17.2" cy="16.5" r="1.7"/><path d="M8.3 16.5h7.1"/><path d="M3 11h11"/></svg>
+            </div>
+            <h3>نقل البضائع السائبة والأسمنت</h3>
+            <p>نقل البضائع السائبة، بما في ذلك الأسمنت السائب، بشاحنات مهيأة لهذا النوع من الحمولة بين مواقع التحميل والتسليم.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 12.5S10 8.8 10 6.2a3.5 3.5 0 1 0-7 0c0 2.6 3.5 6.3 3.5 6.3z"/><circle cx="6.5" cy="6.2" r="1.15" fill="currentColor" stroke="none"/><path d="M17.5 21s3.5-3.7 3.5-6.3a3.5 3.5 0 1 0-7 0c0 2.6 3.5 6.3 3.5 6.3z"/><circle cx="17.5" cy="14.7" r="1.15" fill="currentColor" stroke="none"/><path d="M9.2 9.8c2.2.6 3.8 3.2 5.6 5.6"/></svg>
+            </div>
+            <h3>النقل بين المدن</h3>
+            <p>خدمة نقل بين مدن المملكة، انطلاقاً من الدمام وإلى مختلف المناطق، وفق مسار وموعد يتفق عليه مع العميل.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M10 13h6M10 17h6"/></svg>
+            </div>
+            <h3>عقود نقل للمصانع والشركات</h3>
+            <p>ترتيبات نقل تعاقدية تناسب حاجة المصانع والشركات، بتعامل واضح وتنسيق مستمر حسب طبيعة العمل.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="why">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">ما يميزنا</span>
+          <h2>لماذا نحن</h2>
+          <p>نعمل بأسلوب مهني يحفظ وقت العميل وسلامة الحمولة، مع تعامل واضح من أول تواصل.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+            </div>
+            <h3>التزام بالمواعيد</h3>
+            <p>نحرص على التسليم في الوقت المتفق عليه، لأن التزام المواعيد أساس الثقة في أعمال النقل.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.1"/><path d="M5.6 19.2a6.5 6.5 0 0 1 12.8 0"/></svg>
+            </div>
+            <h3>سائقون محترفون</h3>
+            <p>يتولى النقل سائقون محترفون يراعون سلامة الحمولة والطريق، ويلتزمون بتعليمات التسليم المتفق عليها.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3.6 13.2 8.8 8.8 10-10V3.2H12.4z"/><circle cx="16.2" cy="7.8" r="1.25"/></svg>
+            </div>
+            <h3>أسعار تنافسية</h3>
+            <p>نقدم أسعاراً مدروسة تناسب طبيعة الحمولة والمسار، مع وضوح في العرض قبل بدء العمل.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">نحن بالقرب منكم</span>
+          <h2>تواصل معنا</h2>
+          <p>يسعدنا استقبال استفساراتكم وطلبات النقل عبر البريد الإلكتروني أو الجوال أو واتساب.</p>
+        </div>
+        <div class="contact-box">
+          <a class="contact-item" href="mailto:info@qimamalnajah.com">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            </div>
+            <span>
+              <span class="label">البريد الإلكتروني</span>
+              <span class="value ltr">info@qimamalnajah.com</span>
+            </span>
+          </a>
+          <a class="contact-item" href="tel:+966507389599">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7.2 3.8 9 3.2c.6-.2 1.3.1 1.6.7l1.1 2.3c.3.5.2 1.2-.3 1.6L10 9.2a12.2 12.2 0 0 0 4.8 4.8l1.4-1.4c.4-.5 1.1-.6 1.6-.3l2.3 1.1c.6.3.9 1 .7 1.6l-.6 1.8c-.2.7-.8 1.2-1.6 1.3-7.3.8-13.4-5.3-12.6-12.6.1-.8.6-1.4 1.2-1.7z"/></svg>
+            </div>
+            <span>
+              <span class="label">الجوال</span>
+              <span class="value ltr">+966 50 738 9599</span>
+            </span>
+          </a>
+          <a class="contact-item" href="https://wa.me/966507389599" target="_blank" rel="noopener noreferrer">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.15 6.43 2.15 11.89c0 1.76.46 3.48 1.34 5L2 22l5.24-1.37a9.86 9.86 0 0 0 4.8 1.22h.01c5.46 0 9.89-4.43 9.89-9.89 0-2.64-1.03-5.13-2.9-7-1.87-1.86-4.36-2.96-7-2.96zm0 18.07h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.81.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.53 3.69-8.21 8.23-8.21 2.2 0 4.26.86 5.81 2.41a8.16 8.16 0 0 1 2.4 5.8c0 4.53-3.69 8.22-8.21 8.24zm4.51-6.15c-.25-.12-1.46-.72-1.69-.8-.23-.09-.39-.12-.56.12-.16.25-.64.8-.78.96-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.11-.22-.17-.47-.3z"/></svg>
+            </div>
+            <span>
+              <span class="label">واتساب</span>
+              <span class="value ltr">+966 50 738 9599</span>
+            </span>
+          </a>
+          <div class="contact-item" role="group" aria-label="العنوان">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.3"/></svg>
+            </div>
+            <span>
+              <span class="label">المقر</span>
+              <span class="value">الدمام - المملكة العربية السعودية</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="english" id="en" lang="en" dir="ltr">
+      <div class="wrap">
+        <div class="en-intro">
+          <span class="kicker">English</span>
+          <h2>Dar Qimam Al-Najah United</h2>
+          <p class="tag">Freight &amp; Bulk Cement Transport</p>
+          <p>A Saudi freight transport company based in Dammam, Eastern Province, operating trucks for bulk cargo transport, including bulk cement, between cities across Saudi Arabia.</p>
+        </div>
+
+        <div class="block">
+          <div class="section-head">
+            <h2>Our services</h2>
+          </div>
+          <div class="grid grid-3">
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V8h11v8"/><path d="M14 10h3.5L20 13v3h-6"/><circle cx="6.5" cy="16.5" r="1.7"/><circle cx="17.2" cy="16.5" r="1.7"/><path d="M8.3 16.5h7.1"/><path d="M3 11h11"/></svg>
+              </div>
+              <h3>Bulk cargo and cement transport</h3>
+              <p>Transport of bulk cargo, including bulk cement, on trucks suited to this type of load between loading and delivery points.</p>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 12.5S10 8.8 10 6.2a3.5 3.5 0 1 0-7 0c0 2.6 3.5 6.3 3.5 6.3z"/><circle cx="6.5" cy="6.2" r="1.15" fill="currentColor" stroke="none"/><path d="M17.5 21s3.5-3.7 3.5-6.3a3.5 3.5 0 1 0-7 0c0 2.6 3.5 6.3 3.5 6.3z"/><circle cx="17.5" cy="14.7" r="1.15" fill="currentColor" stroke="none"/><path d="M9.2 9.8c2.2.6 3.8 3.2 5.6 5.6"/></svg>
+              </div>
+              <h3>Intercity transport</h3>
+              <p>Freight transport between cities across the Kingdom, departing from Dammam to other regions, on a route and schedule agreed with the client.</p>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M10 13h6M10 17h6"/></svg>
+              </div>
+              <h3>Transport contracts for factories and companies</h3>
+              <p>Contracted transport arrangements suited to the needs of factories and companies, with clear terms and ongoing coordination.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="section-head">
+            <h2>Why us</h2>
+          </div>
+          <div class="grid grid-3">
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+              </div>
+              <h3>Punctuality</h3>
+              <p>We work to deliver at the agreed time, because punctuality is the foundation of trust in transport work.</p>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.1"/><path d="M5.6 19.2a6.5 6.5 0 0 1 12.8 0"/></svg>
+              </div>
+              <h3>Professional drivers</h3>
+              <p>Our professional drivers take care of cargo and road safety, and follow the agreed delivery instructions.</p>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3.6 13.2 8.8 8.8 10-10V3.2H12.4z"/><circle cx="16.2" cy="7.8" r="1.25"/></svg>
+              </div>
+              <h3>Competitive rates</h3>
+              <p>We offer carefully considered rates suited to the cargo and the route, with a clear quotation before work begins.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>We welcome enquiries and transport requests by email, phone, or WhatsApp.</p>
+          </div>
+          <div class="contact-box">
+            <a class="contact-item" href="mailto:info@qimamalnajah.com">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+              </div>
+              <span>
+                <span class="label">Email</span>
+                <span class="value">info@qimamalnajah.com</span>
+              </span>
+            </a>
+            <a class="contact-item" href="tel:+966507389599">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7.2 3.8 9 3.2c.6-.2 1.3.1 1.6.7l1.1 2.3c.3.5.2 1.2-.3 1.6L10 9.2a12.2 12.2 0 0 0 4.8 4.8l1.4-1.4c.4-.5 1.1-.6 1.6-.3l2.3 1.1c.6.3.9 1 .7 1.6l-.6 1.8c-.2.7-.8 1.2-1.6 1.3-7.3.8-13.4-5.3-12.6-12.6.1-.8.6-1.4 1.2-1.7z"/></svg>
+              </div>
+              <span>
+                <span class="label">Mobile</span>
+                <span class="value">+966 50 738 9599</span>
+              </span>
+            </a>
+            <a class="contact-item" href="https://wa.me/966507389599" target="_blank" rel="noopener noreferrer">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.15 6.43 2.15 11.89c0 1.76.46 3.48 1.34 5L2 22l5.24-1.37a9.86 9.86 0 0 0 4.8 1.22h.01c5.46 0 9.89-4.43 9.89-9.89 0-2.64-1.03-5.13-2.9-7-1.87-1.86-4.36-2.96-7-2.96zm0 18.07h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.81.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.53 3.69-8.21 8.23-8.21 2.2 0 4.26.86 5.81 2.41a8.16 8.16 0 0 1 2.4 5.8c0 4.53-3.69 8.22-8.21 8.24zm4.51-6.15c-.25-.12-1.46-.72-1.69-.8-.23-.09-.39-.12-.56.12-.16.25-.64.8-.78.96-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.11-.22-.17-.47-.3z"/></svg>
+              </div>
+              <span>
+                <span class="label">WhatsApp</span>
+                <span class="value">+966 50 738 9599</span>
+              </span>
+            </a>
+            <div class="contact-item" role="group" aria-label="Address">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.3"/></svg>
+              </div>
+              <span>
+                <span class="label">Location</span>
+                <span class="value">Dammam, Kingdom of Saudi Arabia</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-line" dir="ltr">
+        <span>© 2026</span>
+        <strong dir="rtl">دار قمم النجاح المتحدة</strong>
+        <span>· Dar Qimam Al-Najah United</span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
